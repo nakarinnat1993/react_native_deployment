@@ -21,6 +21,8 @@ import {
   Header,
 } from 'react-native/Libraries/NewAppScreen';
 
+import { APP_NAME } from '@env';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -86,8 +88,11 @@ function App(): React.JSX.Element {
             paddingHorizontal: safePadding,
             paddingBottom: safePadding,
           }}>
-          <Section title="Step One">
+          <Section title="Title">
             Test deployment to play store
+          </Section>
+          <Section title=".ENV">
+            APP_NAME= {APP_NAME}
           </Section>
         </View>
       </ScrollView>
