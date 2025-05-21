@@ -89,7 +89,7 @@ function App(): React.JSX.Element {
             paddingBottom: safePadding,
           }}>
           <Section title="Title">
-            Test deployment to play store
+            Test deployment to play store v2
           </Section>
           <Section title=".ENV">
             APP_NAME= {APP_NAME}

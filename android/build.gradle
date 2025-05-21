@@ -1,3 +1,18 @@
+import java.util.Properties
+
+def loadEnvProps() {
+    def props = new Properties()
+    def envFile = new File(rootDir.parentFile, ".env")
+    if (envFile.exists()) {
+        envFile.withInputStream { stream ->
+            props.load(stream)
+        }
+    }
+    return props
+}
+
+ext.env = loadEnvProps()
+
 buildscript {
     ext {
         buildToolsVersion = "35.0.0"
