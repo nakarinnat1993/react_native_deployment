@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-const App = () => {
+const FlexboxLayout = () => {
   return (
     <>
         <View style={styles.container}>
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default FlexboxLayout;
